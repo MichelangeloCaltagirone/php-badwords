@@ -28,10 +28,10 @@ $text = $_GET["textArea"];
    
     <div class="container">
         <?php echo $text?>
-        <h3 class="text-center mb-3">E' lungo <span class="text-warning fw-bold"><?php echo strlen($text)?></span> caratteri</h3>
+        <h3 class="text-center my-3">E' lungo <span class="text-warning fw-bold"><?php echo strlen($text)?></span> caratteri</h3>
     </div>
 
-    <h1 class="text-center my-5">Il testo censurato dalla parola (<?php echo($censuredWord)?>) è il seguente:</h1>
+    <h1 class="text-center my-5">Il testo censurato dalla parola (<span class="text-danger"><?php echo($censuredWord)?></span>) è il seguente:</h1>
     
     <div class="container">
         <?php 
